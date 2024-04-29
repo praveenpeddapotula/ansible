@@ -1,4 +1,4 @@
-- name: vars from data-types
+- name: vars from datatypes
   hosts: localhost
   vars:
    course: Devops with aws #string

@@ -12,9 +12,9 @@
     Devops: 3
     aws: 2
     terraform: 1
-   Real-project: true #boolean
+   Realproject: true #boolean
    tasks:
    - name: print vars
      ansible.builtin.debug:
-      msg: "course is :{{course}} tools is :{{Tools}} and experience is :{{Experience}} and realproject is:{{Real-project}}"
+      msg: "course is :{{course}} tools is :{{Tools}} and experience is :{{Experience}} and realproject is:{{Realproject}}"
     

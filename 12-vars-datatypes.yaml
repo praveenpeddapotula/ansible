@@ -9,9 +9,9 @@
    - kubernetes
    - jenkins
    Experience: #map or dictionary
-    Devops: 3
-    aws: 2
-    terraform: 1
+     Devops: 3
+     aws: 2
+     terraform: 1
    Realproject: true #boolean
    tasks:
    - name: print vars

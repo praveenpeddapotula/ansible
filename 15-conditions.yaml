@@ -7,11 +7,11 @@
   tasks:
   - name: check number less than 10
     ansible.builtin.debug:
-    msg: "given number {{NUMBER}} is less than 10"
+     msg: "given number {{NUMBER}} is less than 10"
     when: NUMBER| int < 10
 
   - name: check number greater than 10
     ansible.builtin.debug:
-    msg: "given number {{NUMBER}} is greater than 10"
+     msg: "given number {{NUMBER}} is greater than 10"
     when: NUMBER | int > 10
     

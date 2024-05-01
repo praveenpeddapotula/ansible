@@ -59,4 +59,4 @@
 
   - name: after conversion to list
     ansible.builtin.debug:
-      msg: "after conversion: {{ mydict | dict2items}}"
+      msg: "after conversion: {{ my_dict | dict2items}}"

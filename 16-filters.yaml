@@ -45,18 +45,18 @@
     ansible.builtin.debug:
      msg: "{{ num | max }}"
 
-  - name: convert dictionary into list
-    hosts: localhost
-    vars:
-     my_dict:
-      course: ansible
-      trainer: sivakumar
-      duration: 100hrs
-    tasks:
-    - name: before conversion 
-      ansible.builtin.debug:
-       msg: "before conversion: {{ my_dict }}"
+- name: convert dictionary into list
+  hosts: localhost
+  vars:
+   my_dict:
+    course: ansible
+    trainer: sivakumar
+    duration: 100hrs
+  tasks:
+  - name: before conversion 
+    ansible.builtin.debug:
+     msg: "before conversion: {{ my_dict }}"
 
-    - name: after conversion to list
-      ansible.builtin.debug:
-       msg: "after conversion: {{ mydict | dict2items}}"
+  - name: after conversion to list
+    ansible.builtin.debug:
+      msg: "after conversion: {{ mydict | dict2items}}"

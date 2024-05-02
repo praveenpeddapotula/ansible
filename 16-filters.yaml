@@ -65,12 +65,9 @@
   hosts: localhost
   vars:
    users:
-    - key: course
-      value: ansible
-    - key: trainer
-      trainer: sivakumar
-    - key: duration
-      value: 100hrs
+    - {'key': 'course', 'value': 'ansible'}
+    - {'key': 'trainer', 'value': 'sivakumar'}
+    - {'key': 'duration', 'value': '100hrs'}
    tasks:
    - name: convert items to dictonary
      ansible.builtin.debug:

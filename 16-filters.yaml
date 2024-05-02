@@ -65,9 +65,12 @@
   hosts: localhost
   vars:
    users:
-   - testuser1
-   - testuser2
-   - testuser3
+    - key: course
+      value: ansible
+    - key: trainer
+      trainer: sivakumar
+    - key: duration
+      value: 100hrs
    tasks:
    - name:
      ansible.builtin.debug:

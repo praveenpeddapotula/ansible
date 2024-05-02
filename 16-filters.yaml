@@ -68,11 +68,11 @@
     - {'key': 'course', 'value': 'ansible'}
     - {'key': 'trainer', 'value': 'sivakumar'}
     - {'key': 'duration', 'value': '100hrs'}
-   tasks:
-   - name: convert items to dictonary
+  tasks:
+  - name: convert items to dictonary
      ansible.builtin.debug:
       msg: " before conert : {{ my_list }}"
 
-   - name: after conversion
+  - name: after conversion
      ansible.builtin.debug:
       msg: " after convert : {{ my_list | items2dict }}"

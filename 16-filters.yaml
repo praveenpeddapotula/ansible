@@ -70,9 +70,9 @@
     - {'key': 'duration', 'value': '100hrs'}
   tasks:
   - name: convert items to dictonary
-     ansible.builtin.debug:
-      msg: " before conert : {{ my_list }}"
+    ansible.builtin.debug:
+     msg: " before conert : {{ my_list }}"
 
   - name: after conversion
-     ansible.builtin.debug:
-      msg: " after convert : {{ my_list | items2dict }}"
+    ansible.builtin.debug:
+     msg: " after convert : {{ my_list | items2dict }}"

@@ -73,6 +73,6 @@
      ansible.builtin.debug:
       msg: " before conert : {{ my_list }}"
 
-   - name:
+   - name: after conversion
      ansible.builtin.debug:
-      msg: " after conert : {{ my_list | items2dict }}"
+      msg: " after convert : {{ my_list | items2dict }}"

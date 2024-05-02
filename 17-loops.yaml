@@ -4,7 +4,7 @@
   - name: print names
     ansible.builtin.debug:
      msg: "hi im learing {{item}}"
-   loop:
-   - linux
-   - ansible
-   - terraform
+    loop:
+    - linux
+    - ansible
+    - terraform

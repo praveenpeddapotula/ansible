@@ -1,9 +1,10 @@
 - name: loop
   hosts: localhost
   tasks:
-  ansible.builtin.debug:
-   msg: "hi im learing {{item}}"
-  loop:
-  - linux
-  - ansible
-  - terraform
+  - name: print names
+    ansible.builtin.debug:
+     msg: "hi im learing {{item}}"
+   loop:
+   - linux
+   - ansible
+   - terraform

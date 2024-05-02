@@ -64,15 +64,15 @@
 - name: convert items to dictionary
   hosts: localhost
   vars:
-   users:
+   my_list:
     - {'key': 'course', 'value': 'ansible'}
     - {'key': 'trainer', 'value': 'sivakumar'}
     - {'key': 'duration', 'value': '100hrs'}
    tasks:
    - name: convert items to dictonary
      ansible.builtin.debug:
-      msg: " before conert : {{ users }}"
+      msg: " before conert : {{ my_list }}"
 
    - name:
      ansible.builtin.debug:
-      msg: " after conert : {{ users | items2dict }}"
+      msg: " after conert : {{ my_list | items2dict }}"

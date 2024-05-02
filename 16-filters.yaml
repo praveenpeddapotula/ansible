@@ -72,7 +72,7 @@
     - key: duration
       value: 100hrs
    tasks:
-   - name:
+   - name: convert items to dictonary
      ansible.builtin.debug:
       msg: " before conert : {{ users }}"
 

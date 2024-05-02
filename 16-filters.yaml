@@ -60,3 +60,19 @@
   - name: after conversion to list
     ansible.builtin.debug:
       msg: "after conversion: {{ my_dict | dict2items}}"
+    
+- name: convert items to dictionary
+  hosts: localhost
+  vars:
+   users:
+   - testuser1
+   - testuser2
+   - testuser3
+   tasks:
+   - name:
+     ansible.builtin.debug:
+      msg: " before conert : {{ users }}"
+
+   - name:
+     ansible.builtin.debug:
+      msg: " after conert : {{ users | items2dict }}"
